@@ -1,7 +1,7 @@
 import Post from '../models/post';
 import cloudinary from 'cloudinary';
 import User from '../models/user';
-import { json } from 'express';
+// import { json } from 'express';
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,

@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import PostForm from '../../../components/forms/PostForm';
-import PostList from '../../../components/cards/PostList';
+// import PostList from '../../../components/cards/PostList';
 import { toast } from 'react-toastify';
 
 const EditPost = () => {

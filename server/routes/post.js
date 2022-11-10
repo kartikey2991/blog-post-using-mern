@@ -20,7 +20,11 @@ import {
   totalPosts,
   posts,
 } from '../controllers/post';
-import { requireSignin, canEditDeletePost } from '../middlewares/ss.js';
+import {
+  requireSignin,
+  canEditDeletePost,
+  isAdmin,
+} from '../middlewares/ss.js';
 
 router.post('/create-post', requireSignin, createPost);
 router.post(
@@ -51,4 +55,7 @@ router.put('/remove-comment', requireSignin, removeComment);
 router.get('/total-posts', totalPosts);
 
 router.get('/posts', posts);
+
+//admin
+router.delete('/admin/delete-post/:_id', requireSignin, isAdmin, deletePost);
 module.exports = router;

@@ -5,7 +5,7 @@ import axios from 'axios';
 // import { posts } from '../../server/controllers/post';
 import Post from '../components/cards/Post';
 import Head from 'next/head';
-import Title from 'antd/lib/skeleton/Title';
+// import Title from 'antd/lib/skeleton/Title';
 
 const Home = ({ posts }) => {
   const [state, setState] = useContext(UserContext);
