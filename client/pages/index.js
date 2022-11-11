@@ -27,7 +27,7 @@ const Home = ({ posts }) => {
   return (
     <>
       {head()}
-      <ParallaxBG url='/images/default.jpg' />
+      <ParallaxBG url='/images/front.jpeg' />
       {/* <pre>{JSON.stringify(posts, null, 4)}</pre> */}
       <div className='container'>
         <div className='row pt-5 '>
